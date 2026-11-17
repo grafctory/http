@@ -18,16 +18,14 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- **Breaking**: Upgrade `@metreeca/core` to `^0.14.0`; projects using Core alongside this package raise their own
+  `@metreeca/core` dependency to `^0.14.0` as well, so that both packages share a single copy of Core
 - **Breaking**: `@metreeca/http/cache` `skip` option renamed to `avoid`, pairing it with `force` as the policy keeping
-  selected targets out of the cache whatever the origin server allows; behaviour is unchanged
-
-- `@metreeca/http/monitor` answers an exchange failing without a response with a network error `Response` rather than
-  rejecting, so callers handle transport and server failures alike through a response whose `ok` is `false`
-
-### Fixed
-
-- `@metreeca/http/monitor` reports an exchange failing without a response as a warning naming the resource and the
-  reason stated by the cause of the error, such as `fetch failed (ETIMEDOUT)`, rather than letting it go unreported
+  selected targets out of the cache whatever the origin allows; migrate `cache({ skip })` to `cache({ avoid })`
+- **Breaking**: `@metreeca/http/monitor` answers an exchange failing without a response with a network error
+  `Response` rather than rejecting, and warns naming the resource and the reason for the failure, such as
+  `fetch failed (ETIMEDOUT)`; callers handle transport and server failures alike through a response whose `ok` is
+  `false`, so move failure handling from a `catch` on the call to a check on `response.ok`
 
 ## [0.5.0](https://github.com/metreeca/http/compare/v0.4.1...v0.5.0) - 2026-10-19
 
