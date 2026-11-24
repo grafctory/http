@@ -11,30 +11,30 @@
 
 # Overview
 
-`@metreeca/http` is the HTTP substrate shared across Metreeca packages: a composable middleware layer over the standard
+`@grafctory/http` is the HTTP substrate shared across Metreeca packages: a composable middleware layer over the standard
 `fetch` function, ready-made middlewares for recurring concerns, and the HTTP method and status code constants.
 
 Each middleware is published as its own subpath module, so consumers pay only for what they import; the root module
 carries the `Fetch` and `Middleware` types, the `createFetch` assembler and the method and status code constants.
 
-The package was migrated from `@metreeca/core/fetch` and `@metreeca/core/http`, which have since been removed from
-`@metreeca/core`.
+The package was migrated from `@grafctory/core/fetch` and `@grafctory/core/http`, which have since been removed from
+`@grafctory/core`.
 
 # References
 
-- [@metreeca/core](https://github.com/metreeca/core) - Core utilities and shared types
+- [@grafctory/core](https://github.com/grafctory/core) - Core utilities and shared types
 
 # NPM Scripts
 
 - **`npm run clean`** - Remove dependencies and build artefacts
 - **`npm run prime`** - Install dependencies from the lockfile
-- **`npm run setup`** - Install dependencies and link sibling `@metreeca/*` repositories
+- **`npm run setup`** - Install dependencies and link sibling `@grafctory/*` repositories
 - **`npm run build`** - Compile sources and generate docs
 - **`npm run check`** - Run the test suite
 - **`npm run proof`** - Serve live docs
 
 > [!CAUTION]
-> **`prime` and `setup` are not interchangeable.** Run `prime` when finalising a public release: `@metreeca/*` imports
+> **`prime` and `setup` are not interchangeable.** Run `prime` when finalising a public release: `@grafctory/*` imports
 > resolve to the published releases recorded in the lockfile. Run `setup` for local development against unpublished
 > sibling branches: imports resolve to the working copies in the neighbouring repositories.
 

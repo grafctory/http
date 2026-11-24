@@ -22,8 +22,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { basic } from "@metreeca/http/basic";
+ * import { createFetch } from "@grafctory/http";
+ * import { basic } from "@grafctory/http/basic";
  *
  * const client = createFetch(basic("user", "secret"));
  * ```
@@ -33,7 +33,7 @@
  * @see {@link https://www.rfc-editor.org/rfc/rfc7617 RFC 7617 - The 'Basic' HTTP Authentication Scheme}
  */
 
-import { encodeBase64 } from "@metreeca/core/base64";
+import { encodeBase64 } from "@grafctory/core/base64";
 import type { Fetch, Middleware } from "../index.js";
 
 

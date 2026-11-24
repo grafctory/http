@@ -23,10 +23,10 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { success } from "@metreeca/http/success";
- * import { throttle } from "@metreeca/http/throttle";
- * import { timeout } from "@metreeca/http/timeout";
+ * import { createFetch } from "@grafctory/http";
+ * import { success } from "@grafctory/http/success";
+ * import { throttle } from "@grafctory/http/throttle";
+ * import { timeout } from "@grafctory/http/timeout";
  *
  * const client = createFetch(
  *   success(),                              // declared before throttle: retries see responses, not rejections
@@ -40,7 +40,7 @@
  * @see {@link https://www.rfc-editor.org/rfc/rfc9110#section-10.2.3 RFC 9110 § 10.2.3 - Retry-After}
  */
 
-import { createThrottle } from "@metreeca/core/async";
+import { createThrottle } from "@grafctory/core/async";
 import { parseInstant, parseDuration } from "../index.core.js";
 import { type Fetch, InternalServerError, type Middleware, RequestTimeout, TooManyRequests } from "../index.js";
 import type { Problem } from "./success.js";

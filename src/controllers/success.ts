@@ -27,8 +27,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch, NotFound } from "@metreeca/http";
- * import { success } from "@metreeca/http/success";
+ * import { createFetch, NotFound } from "@grafctory/http";
+ * import { success } from "@grafctory/http/success";
  *
  * const client = createFetch(success()); // rejects unless response.ok
  *
@@ -49,8 +49,8 @@
  * @see {@link https://www.rfc-editor.org/rfc/rfc9457 RFC 9457 - Problem Details for HTTP APIs}
  */
 
-import { isAny, isError, isNumber, isObject, isOptional, isString, isValue, key, type Value } from "@metreeca/core";
-import { immutable } from "@metreeca/core/values";
+import { isAny, isError, isNumber, isObject, isOptional, isString, isValue, key, type Value } from "@grafctory/core";
+import { immutable } from "@grafctory/core/values";
 import { type Fetch, type Middleware, NetworkError } from "../index.js";
 
 

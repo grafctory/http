@@ -20,7 +20,7 @@
  * @module
  */
 
-import type { Bucket } from "@metreeca/core/bucket";
+import type { Bucket } from "@grafctory/core/bucket";
 import type { Entry, Store } from "./index.core.js";
 
 

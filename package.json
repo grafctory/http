@@ -1,5 +1,5 @@
 {
-  "name": "@metreeca/http",
+  "name": "@grafctory/http",
   "version": "0.6.1",
   "description": "Composable middleware for the standard fetch API.",
   "keywords": [
@@ -8,9 +8,9 @@
     "fetch",
     "middleware"
   ],
-  "homepage": "https://metreeca.github.io/http/",
+  "homepage": "https://grafctory.github.io/http/",
   "bugs": {
-    "url": "https://github.com/metreeca/http/issues",
+    "url": "https://github.com/grafctory/http/issues",
     "email": "info@metreeca.com"
   },
   "license": "Apache-2.0",
@@ -21,61 +21,61 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metreeca/http.git"
+    "url": "git+https://github.com/grafctory/http.git"
   },
   "type": "module",
   "sideEffects": false,
   "exports": {
     ".": {
-      "@metreeca/source": "./src/index.ts",
+      "@grafctory/source": "./src/index.ts",
       "default": "./dist/index.js"
     },
     "./basic": {
-      "@metreeca/source": "./src/authenticators/basic.ts",
+      "@grafctory/source": "./src/authenticators/basic.ts",
       "default": "./dist/authenticators/basic.js"
     },
     "./bearer": {
-      "@metreeca/source": "./src/authenticators/bearer.ts",
+      "@grafctory/source": "./src/authenticators/bearer.ts",
       "default": "./dist/authenticators/bearer.js"
     },
     "./headers": {
-      "@metreeca/source": "./src/controllers/headers.ts",
+      "@grafctory/source": "./src/controllers/headers.ts",
       "default": "./dist/controllers/headers.js"
     },
     "./throttle": {
-      "@metreeca/source": "./src/controllers/throttle.ts",
+      "@grafctory/source": "./src/controllers/throttle.ts",
       "default": "./dist/controllers/throttle.js"
     },
     "./timeout": {
-      "@metreeca/source": "./src/controllers/timeout.ts",
+      "@grafctory/source": "./src/controllers/timeout.ts",
       "default": "./dist/controllers/timeout.js"
     },
     "./success": {
-      "@metreeca/source": "./src/controllers/success.ts",
+      "@grafctory/source": "./src/controllers/success.ts",
       "default": "./dist/controllers/success.js"
     },
     "./monitor": {
-      "@metreeca/source": "./src/controllers/monitor.ts",
+      "@grafctory/source": "./src/controllers/monitor.ts",
       "default": "./dist/controllers/monitor.js"
     },
     "./xsrf": {
-      "@metreeca/source": "./src/controllers/xsrf.ts",
+      "@grafctory/source": "./src/controllers/xsrf.ts",
       "default": "./dist/controllers/xsrf.js"
     },
     "./cache": {
-      "@metreeca/source": "./src/resolvers/cache/index.ts",
+      "@grafctory/source": "./src/resolvers/cache/index.ts",
       "default": "./dist/resolvers/cache/index.js"
     },
     "./protocol": {
-      "@metreeca/source": "./src/resolvers/protocol.ts",
+      "@grafctory/source": "./src/resolvers/protocol.ts",
       "default": "./dist/resolvers/protocol.js"
     },
     "./transport": {
-      "@metreeca/source": "./src/resolvers/transport.ts",
+      "@grafctory/source": "./src/resolvers/transport.ts",
       "default": "./dist/resolvers/transport.js"
     },
     "./mock": {
-      "@metreeca/source": "./src/resolvers/mock.ts",
+      "@grafctory/source": "./src/resolvers/mock.ts",
       "default": "./dist/resolvers/mock.js"
     }
   },
@@ -96,10 +96,10 @@
     "proof": "ush up npx typedoc --watch + ush ws --open docs"
   },
   "dependencies": {
-    "@metreeca/core": "^0.14.0"
+    "@grafctory/core": "^0.14.0"
   },
   "devDependencies": {
-    "@metreeca/rack": "^0.8.0",
+    "@grafctory/rack": "^0.8.0",
     "@types/node": "^26.1.1",
     "typedoc": "^0.28.14",
     "typescript": "^6.0.3",

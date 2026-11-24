@@ -29,8 +29,8 @@
  * @see {@link https://www.rfc-editor.org/rfc/rfc9110#section-5 RFC 9110 § 5 - Fields}
  */
 
-import { Nullable } from "@metreeca/core";
-import { immutable } from "@metreeca/core/values";
+import { Nullable } from "@grafctory/core";
+import { immutable } from "@grafctory/core/values";
 
 
 /**

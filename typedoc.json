@@ -1,8 +1,8 @@
 {
   "tsconfig": "./tsconfig.build.json",
   "externalSymbolLinkMappings": {
-    "@metreeca/core": {
-      "*": "https://metreeca.github.io/core/"
+    "@grafctory/core": {
+      "*": "https://grafctory.github.io/core/"
     },
     "global": {
       "Error": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
@@ -33,7 +33,7 @@
   "sourceLinkExternal": true,
   "markdownLinkExternal": true,
   "navigationLinks": {
-    "GitHub": "https://github.com/metreeca/http"
+    "GitHub": "https://github.com/grafctory/http"
   },
   "githubPages": false,
   "hideGenerator": true,

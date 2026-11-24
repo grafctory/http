@@ -27,8 +27,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { protocol } from "@metreeca/http/protocol";
+ * import { createFetch } from "@grafctory/http";
+ * import { protocol } from "@grafctory/http/protocol";
  *
  * const client = createFetch(
  *   protocol("file", files),  // handler serving file:

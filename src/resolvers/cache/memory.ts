@@ -20,7 +20,7 @@
  * @module
  */
 
-import { immutable } from "@metreeca/core/values";
+import { immutable } from "@grafctory/core/values";
 import type { Entry, Store } from "./index.core.js";
 
 

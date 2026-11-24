@@ -27,8 +27,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { monitor } from "@metreeca/http/monitor";
+ * import { createFetch } from "@grafctory/http";
+ * import { monitor } from "@grafctory/http/monitor";
  *
  * const client = createFetch(monitor(console));
  * ```
@@ -36,8 +36,8 @@
  * @module
  */
 
-import { isError, isString } from "@metreeca/core";
-import { clip } from "@metreeca/core/strings";
+import { isError, isString } from "@grafctory/core";
+import { clip } from "@grafctory/core/strings";
 import { getMethod, getTarget } from "../index.core.js";
 import type { Fetch, Middleware } from "../index.js";
 

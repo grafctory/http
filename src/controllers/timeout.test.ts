@@ -15,7 +15,7 @@
  */
 
 import { describe, expect, it, type Mock, vi } from "vitest";
-import { sleep } from "@metreeca/core/async";
+import { sleep } from "@grafctory/core/async";
 import { type Fetch, GatewayTimeout } from "../index.js";
 import { timeout } from "./timeout.js";
 

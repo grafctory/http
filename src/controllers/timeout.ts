@@ -23,8 +23,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { timeout } from "@metreeca/http/timeout";
+ * import { createFetch } from "@grafctory/http";
+ * import { timeout } from "@grafctory/http/timeout";
  *
  * const client = createFetch(timeout(5000));
  * ```

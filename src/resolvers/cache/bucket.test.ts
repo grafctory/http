@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import type { Bucket } from "@metreeca/core/bucket";
+import type { Bucket } from "@grafctory/core/bucket";
 import { describe, expect, it } from "vitest";
 import { OK } from "../../index.js";
 import { createBucketStore } from "./bucket.js";

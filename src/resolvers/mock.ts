@@ -23,8 +23,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { mock } from "@metreeca/http/mock";
+ * import { createFetch } from "@grafctory/http";
+ * import { mock } from "@grafctory/http/mock";
  *
  * const client = createFetch(mock({ serve: request => Response.json({ url: request.url }), delay: 500 }));
  * ```

@@ -23,8 +23,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { bearer } from "@metreeca/http/bearer";
+ * import { createFetch } from "@grafctory/http";
+ * import { bearer } from "@grafctory/http/bearer";
  *
  * createFetch(bearer(token));                                 // static token
  * createFetch(bearer(async request => vault.token(request))); // resolved per request
@@ -35,8 +35,8 @@
  * @see {@link https://www.rfc-editor.org/rfc/rfc6750 RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage}
  */
 
-import { isString } from "@metreeca/core";
-import type { Awaitable } from "@metreeca/core/async";
+import { isString } from "@grafctory/core";
+import type { Awaitable } from "@grafctory/core/async";
 import type { Fetch, Middleware } from "../index.js";
 
 

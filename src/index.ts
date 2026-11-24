@@ -39,7 +39,7 @@
  * A named constant stands in for the method or status code it names:
  *
  * ```typescript
- * import { NotFound, POST } from "@metreeca/http";
+ * import { NotFound, POST } from "@grafctory/http";
  *
  * (await fetch("https://api.example.com/data", { method: POST })).status === NotFound; // rather than "POST" and 404
  * ```
@@ -47,7 +47,7 @@
  * A middleware of your own is written as a function wrapping the client it delegates to:
  *
  * ```typescript
- * import { Middleware } from "@metreeca/http";
+ * import { Middleware } from "@grafctory/http";
  *
  * const trace: Middleware = fetch => async (input, init) => {
  *
@@ -63,9 +63,9 @@
  * A client is assembled once from the middlewares an application needs and shared wherever an exchange is performed:
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { basic } from "@metreeca/http/basic";
- * import { success } from "@metreeca/http/success";
+ * import { createFetch } from "@grafctory/http";
+ * import { basic } from "@grafctory/http/basic";
+ * import { success } from "@grafctory/http/success";
  *
  * const client = createFetch(
  *   basic("user", "secret"),
@@ -82,7 +82,7 @@
  * stated, so that a bare target, a `Request` and a target paired with options are all handled alike:
  *
  * ```typescript
- * import { getHeaders, getMedia, getMethod, getTarget } from "@metreeca/http";
+ * import { getHeaders, getMedia, getMethod, getTarget } from "@grafctory/http";
  *
  * getMethod("https://api.example.com/data", { method: "post" }); // "POST"
  * getTarget("https://api.example.com/data#section").href; // "https://api.example.com/data"
@@ -93,7 +93,7 @@
  * Numbers, dates and durations are reported as plain numbers and milliseconds:
  *
  * ```typescript
- * import { parseDuration, parseInstant, parseInteger } from "@metreeca/http";
+ * import { parseDuration, parseInstant, parseInteger } from "@grafctory/http";
  *
  * const { headers } = response; // as fetched above
  *
@@ -109,7 +109,7 @@
  * and a value, and a semicolon splits an item into a value and the parameters qualifying it:
  *
  * ```typescript
- * import { parseItem, parseList, parseParameter, parseQuoted } from "@metreeca/http";
+ * import { parseItem, parseList, parseParameter, parseQuoted } from "@grafctory/http";
  *
  * parseQuoted("\"quoted, value\""); // "quoted, value"
  * parseList(headers.get("vary")); // [ "accept", "accept-encoding" ]

@@ -1,10 +1,10 @@
-# @metreeca/http
+# @grafctory/http
 
-[![npm](https://img.shields.io/npm/v/@metreeca/http)](https://www.npmjs.com/package/@metreeca/http)
+[![npm](https://img.shields.io/npm/v/@grafctory/http)](https://www.npmjs.com/package/@grafctory/http)
 
 Composable middleware for the standard fetch API.
 
-**@metreeca/http** layers recurring HTTP concerns over the standard
+**@grafctory/http** layers recurring HTTP concerns over the standard
 [`fetch`](https://developer.mozilla.org/docs/Web/API/Window/fetch) function, without introducing a bespoke client API. A
 middleware wraps a fetch implementation, returning a new one with the same signature that adjusts requests and responses
 as they flow through, and a chain of them is assembled into a single client to be shared across an application:
@@ -16,7 +16,7 @@ as they flow through, and a chain of them is assembled into a single client to b
 # Installation
 
 ```shell
-npm install @metreeca/http
+npm install @grafctory/http
 ```
 
 > [!WARNING]
@@ -30,11 +30,11 @@ A client is assembled once from the middlewares an application needs and shared 
 supplying the assembler and each subpath module a middleware:
 
 ```typescript
-import { createFetch } from "@metreeca/http";
-import { bearer } from "@metreeca/http/bearer";
-import { headers } from "@metreeca/http/headers";
-import { success } from "@metreeca/http/success";
-import { timeout } from "@metreeca/http/timeout";
+import { createFetch } from "@grafctory/http";
+import { bearer } from "@grafctory/http/bearer";
+import { headers } from "@grafctory/http/headers";
+import { success } from "@grafctory/http/success";
+import { timeout } from "@grafctory/http/timeout";
 
 const client = createFetch(                // shared across the application
 	bearer(() => session.token),             // Authorization header, resolved per request
@@ -58,55 +58,55 @@ a further chain.
 >
 > | Module                     | Description                        |
 > |----------------------------|------------------------------------|
-> | [@metreeca/http]           | Client assembly and HTTP utilities |
+> | [@grafctory/http]           | Client assembly and HTTP utilities |
 > | **Request Authentication** |                                    |
-> | [@metreeca/http/basic]     | `Basic` authentication             |
-> | [@metreeca/http/bearer]    | `Bearer` authentication            |
+> | [@grafctory/http/basic]     | `Basic` authentication             |
+> | [@grafctory/http/bearer]    | `Bearer` authentication            |
 > | **Exchange Control**       |                                    |
-> | [@metreeca/http/headers]   | Default header fields              |
-> | [@metreeca/http/throttle]  | Adaptive pacing and retries        |
-> | [@metreeca/http/timeout]   | Bounded response wait              |
-> | [@metreeca/http/success]   | Uniform failure reporting          |
-> | [@metreeca/http/monitor]   | Exchange reporting                 |
-> | [@metreeca/http/xsrf]      | XSRF protection                    |
+> | [@grafctory/http/headers]   | Default header fields              |
+> | [@grafctory/http/throttle]  | Adaptive pacing and retries        |
+> | [@grafctory/http/timeout]   | Bounded response wait              |
+> | [@grafctory/http/success]   | Uniform failure reporting          |
+> | [@grafctory/http/monitor]   | Exchange reporting                 |
+> | [@grafctory/http/xsrf]      | XSRF protection                    |
 > | **Exchange Resolution**    |                                    |
-> | [@metreeca/http/cache]     | HTTP response caching              |
-> | [@metreeca/http/protocol]  | Custom protocol handlers           |
-> | [@metreeca/http/transport] | Custom fetch transport             |
-> | [@metreeca/http/mock]      | Mock fetch transport               |
+> | [@grafctory/http/cache]     | HTTP response caching              |
+> | [@grafctory/http/protocol]  | Custom protocol handlers           |
+> | [@grafctory/http/transport] | Custom fetch transport             |
+> | [@grafctory/http/mock]      | Mock fetch transport               |
 
-[@metreeca/http]: https://metreeca.github.io/http/modules/index.html
+[@grafctory/http]: https://grafctory.github.io/http/modules/index.html
 
-[@metreeca/http/basic]: https://metreeca.github.io/http/modules/basic.html
+[@grafctory/http/basic]: https://grafctory.github.io/http/modules/basic.html
 
-[@metreeca/http/bearer]: https://metreeca.github.io/http/modules/bearer.html
+[@grafctory/http/bearer]: https://grafctory.github.io/http/modules/bearer.html
 
-[@metreeca/http/headers]: https://metreeca.github.io/http/modules/headers.html
+[@grafctory/http/headers]: https://grafctory.github.io/http/modules/headers.html
 
-[@metreeca/http/throttle]: https://metreeca.github.io/http/modules/throttle.html
+[@grafctory/http/throttle]: https://grafctory.github.io/http/modules/throttle.html
 
-[@metreeca/http/timeout]: https://metreeca.github.io/http/modules/timeout.html
+[@grafctory/http/timeout]: https://grafctory.github.io/http/modules/timeout.html
 
-[@metreeca/http/success]: https://metreeca.github.io/http/modules/success.html
+[@grafctory/http/success]: https://grafctory.github.io/http/modules/success.html
 
-[@metreeca/http/monitor]: https://metreeca.github.io/http/modules/monitor.html
+[@grafctory/http/monitor]: https://grafctory.github.io/http/modules/monitor.html
 
-[@metreeca/http/xsrf]: https://metreeca.github.io/http/modules/xsrf.html
+[@grafctory/http/xsrf]: https://grafctory.github.io/http/modules/xsrf.html
 
-[@metreeca/http/cache]: https://metreeca.github.io/http/modules/cache.html
+[@grafctory/http/cache]: https://grafctory.github.io/http/modules/cache.html
 
-[@metreeca/http/protocol]: https://metreeca.github.io/http/modules/protocol.html
+[@grafctory/http/protocol]: https://grafctory.github.io/http/modules/protocol.html
 
-[@metreeca/http/transport]: https://metreeca.github.io/http/modules/transport.html
+[@grafctory/http/transport]: https://grafctory.github.io/http/modules/transport.html
 
-[@metreeca/http/mock]: https://metreeca.github.io/http/modules/mock.html
+[@grafctory/http/mock]: https://grafctory.github.io/http/modules/mock.html
 
 # Support
 
-- open an [issue](https://github.com/metreeca/http/issues) to report a problem or to suggest a new feature
-- start a [discussion](https://github.com/metreeca/http/discussions) to ask a how-to question or to share an idea
+- open an [issue](https://github.com/grafctory/http/issues) to report a problem or to suggest a new feature
+- start a [discussion](https://github.com/grafctory/http/discussions) to ask a how-to question or to share an idea
 
 # License
 
 This project is licensed under the Apache 2.0 License –
-see [LICENSE](https://github.com/metreeca/http?tab=Apache-2.0-1-ov-file) file for details.
+see [LICENSE](https://github.com/grafctory/http?tab=Apache-2.0-1-ov-file) file for details.

@@ -20,9 +20,9 @@
  * @module
  */
 
-import { isFunction } from "@metreeca/core";
-import type { Bucket } from "@metreeca/core/bucket";
-import { glob } from "@metreeca/core/strings";
+import { isFunction } from "@grafctory/core";
+import type { Bucket } from "@grafctory/core/bucket";
+import { glob } from "@grafctory/core/strings";
 import { parseDuration, parseInstant, parseList, parseParameter } from "../../index.core.js";
 import {
 	BadRequest,

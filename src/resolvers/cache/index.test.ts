@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import type { Some } from "@metreeca/core/arrays";
-import type { Bucket } from "@metreeca/core/bucket";
+import type { Some } from "@grafctory/core/arrays";
+import type { Bucket } from "@grafctory/core/bucket";
 import { afterEach, beforeEach, describe, expect, it, type Mock, vi } from "vitest";
 import {
 	Accepted,

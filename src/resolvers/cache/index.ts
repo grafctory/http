@@ -62,8 +62,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { cache } from "@metreeca/http/cache";
+ * import { createFetch } from "@grafctory/http";
+ * import { cache } from "@grafctory/http/cache";
  *
  * const client = createFetch(cache());
  * ```
@@ -73,8 +73,8 @@
  * @see {@link https://www.rfc-editor.org/rfc/rfc9111 RFC 9111 - HTTP Caching}
  */
 
-import { type Some, some } from "@metreeca/core/arrays";
-import type { Bucket } from "@metreeca/core/bucket";
+import { type Some, some } from "@grafctory/core/arrays";
+import type { Bucket } from "@grafctory/core/bucket";
 import { getHeaders, getMethod, getTarget } from "../../index.core.js";
 import { type Fetch, type Middleware, NotModified } from "../../index.js";
 import {

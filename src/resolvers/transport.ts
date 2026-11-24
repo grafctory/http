@@ -23,8 +23,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { transport } from "@metreeca/http/transport";
+ * import { createFetch } from "@grafctory/http";
+ * import { transport } from "@grafctory/http/transport";
  *
  * const client = createFetch(transport(custom));
  * ```

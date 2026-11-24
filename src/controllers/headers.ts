@@ -23,8 +23,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { headers } from "@metreeca/http/headers";
+ * import { createFetch } from "@grafctory/http";
+ * import { headers } from "@grafctory/http/headers";
  *
  * const client = createFetch(headers({ "Accept": "application/json" }));
  * ```
@@ -34,8 +34,8 @@
  * @see {@link https://www.rfc-editor.org/rfc/rfc9110#section-5 RFC 9110 § 5 - Fields}
  */
 
-import { isFunction } from "@metreeca/core";
-import type { Awaitable } from "@metreeca/core/async";
+import { isFunction } from "@grafctory/core";
+import type { Awaitable } from "@grafctory/core/async";
 import type { Fetch, Middleware } from "../index.js";
 
 

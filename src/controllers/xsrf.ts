@@ -26,8 +26,8 @@
  * **Usage**
  *
  * ```typescript
- * import { createFetch } from "@metreeca/http";
- * import { xsrf } from "@metreeca/http/xsrf";
+ * import { createFetch } from "@grafctory/http";
+ * import { xsrf } from "@grafctory/http/xsrf";
  *
  * const client = createFetch(xsrf());
  * ```
