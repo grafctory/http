@@ -1,13 +1,18 @@
 # @grafctory/http
 
-[![npm](https://img.shields.io/npm/v/@grafctory/http)](https://www.npmjs.com/package/@grafctory/http)
+[![npm][npm-badge]][npm]
+
+[npm-badge]: https://img.shields.io/npm/v/@grafctory/http
+[npm]: https://www.npmjs.com/package/@grafctory/http
+[grafctory]: https://github.com/grafctory
 
 Composable middleware for the standard fetch API.
 
-**@grafctory/http** layers recurring HTTP concerns over the standard
-[`fetch`](https://developer.mozilla.org/docs/Web/API/Window/fetch) function, without introducing a bespoke client API. A
-middleware wraps a fetch implementation, returning a new one with the same signature that adjusts requests and responses
-as they flow through, and a chain of them is assembled into a single client to be shared across an application:
+**@grafctory/http** is the HTTP client module of the [Grafctory][grafctory] model-driven knowledge graph framework. It
+layers recurring HTTP concerns over the standard [`fetch`](https://developer.mozilla.org/docs/Web/API/Window/fetch)
+function, without introducing a bespoke client API. A middleware wraps a fetch implementation, returning a new one with
+the same signature that adjusts requests and responses as they flow through, and a chain of them is assembled into a
+single client to be shared across an application:
 
 - **Drop-in Clients**: every client is a standard `fetch` function, interchangeable with the platform primitive
 - **Bundled Middlewares**: recurring concerns come solved and tested, keeping call sites free of boilerplate
@@ -110,3 +115,5 @@ a further chain.
 
 This project is licensed under the Apache 2.0 License –
 see [LICENSE](https://github.com/grafctory/http?tab=Apache-2.0-1-ov-file) file for details.
+
+<sub>Grafctory™ is a trademark of Metreeca srl.</sub>
