@@ -10,13 +10,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased](https://github.com/grafctory/http/compare/v0.6.1...HEAD)
 
-## [0.6.1](https://github.com/metreeca/http/compare/v0.6.0...v0.6.1) - 2026-11-24
+## [0.6.1](https://github.com/grafctory/http/compare/v0.6.0...v0.6.1) - 2026-11-24
 
 ### Changed
 
 - Maintenance release with no change to the published API or behaviour
 
-## [0.6.0](https://github.com/metreeca/http/compare/v0.5.0...v0.6.0) - 2026-11-17
+## [0.6.0](https://github.com/grafctory/http/compare/v0.5.0...v0.6.0) - 2026-11-17
 
 ### Added
 
@@ -38,13 +38,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   `fetch failed (ETIMEDOUT)`; callers handle transport and server failures alike through a response whose `ok` is
   `false`, so move failure handling from a `catch` on the call to a check on `response.ok`
 
-## [0.5.0](https://github.com/metreeca/http/compare/v0.4.1...v0.5.0) - 2026-10-19
+## [0.5.0](https://github.com/grafctory/http/compare/v0.4.1...v0.5.0) - 2026-10-19
 
 ### Changed
 
 - Upgrade `@metreeca/core` to `^0.13.0`
 
-## [0.4.1](https://github.com/metreeca/http/compare/v0.4.0...v0.4.1) - 2026-10-14
+## [0.4.1](https://github.com/grafctory/http/compare/v0.4.0...v0.4.1) - 2026-10-14
 
 ### Changed
 
@@ -52,7 +52,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Published exports declare the `@metreeca/source` condition, resolving each entry point to its TypeScript source in
   checkouts linked for local development, while registry consumers keep resolving to the compiled `dist` modules
 
-## [0.4.0](https://github.com/metreeca/http/compare/v0.3.0...v0.4.0) - 2026-10-01
+## [0.4.0](https://github.com/grafctory/http/compare/v0.3.0...v0.4.0) - 2026-10-01
 
 ### Added
 
@@ -63,7 +63,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Raise the minimum supported `@metreeca/core` version to `0.12.0`
 
-## [0.3.0](https://github.com/metreeca/http/compare/v0.2.0...v0.3.0) - 2026-09-24
+## [0.3.0](https://github.com/grafctory/http/compare/v0.2.0...v0.3.0) - 2026-09-24
 
 ### Added
 
@@ -90,7 +90,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Realign to the renamed `@metreeca/core` values module, raising the minimum supported version to
   `0.11.0`: `immutable` is imported from `@metreeca/core/values` in place of `@metreeca/core/structures`
 
-## [0.2.0](https://github.com/metreeca/http/compare/v0.1.1...v0.2.0) - 2026-09-09
+## [0.2.0](https://github.com/grafctory/http/compare/v0.1.1...v0.2.0) - 2026-09-09
 
 ### Changed
 
@@ -112,7 +112,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   clones included, so that a client resolving a relative reference against a replayed response resolves it against the
   same base a freshly retrieved one states; the `Age` header field stays the one departure from the original exchange
 
-## [0.1.1](https://github.com/metreeca/http/releases/tag/v0.1.1) - 2026-08-28
+## [0.1.1](https://github.com/grafctory/http/releases/tag/v0.1.1) - 2026-08-28
 
 ### Added
 
@@ -138,7 +138,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - the declared `@metreeca/core` floor is raised to `0.9.22`, the version first providing the glob matcher
   `@metreeca/http/cache` relies on to compile its `skip` patterns
 
-## [0.1.0](https://github.com/metreeca/http/releases/tag/v0.1.0) - 2026-08-26
+## [0.1.0](https://github.com/grafctory/http/releases/tag/v0.1.0) - 2026-08-26
 
 Initial release, migrated from `@metreeca/core/fetch` and `@metreeca/core/http`, which have since been removed from
 `@metreeca/core`.

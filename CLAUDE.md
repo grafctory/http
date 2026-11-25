@@ -11,8 +11,8 @@
 
 # Overview
 
-`@grafctory/http` is the HTTP substrate shared across Metreeca packages: a composable middleware layer over the standard
-`fetch` function, ready-made middlewares for recurring concerns, and the HTTP method and status code constants.
+`@grafctory/http` is the HTTP substrate shared across Grafctory packages: a composable middleware layer over the
+standard `fetch` function, ready-made middlewares for recurring concerns, and the HTTP method and status code constants.
 
 Each middleware is published as its own subpath module, so consumers pay only for what they import; the root module
 carries the `Fetch` and `Middleware` types, the `createFetch` assembler and the method and status code constants.
