@@ -1,6 +1,6 @@
 {
   "name": "@grafctory/http",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Composable middleware for the standard fetch API.",
   "keywords": [
     "typescript",
@@ -100,7 +100,6 @@
   },
   "devDependencies": {
     "@grafctory/rack": "^0.8.0",
-    "@types/node": "^26.1.1",
     "typedoc": "^0.28.14",
     "typescript": "^6.0.3",
     "vitest": "^4.0.13"
